@@ -1,0 +1,9 @@
+<h2>{{ fullName }}</h2>
+<p><strong>Position:</strong> {{ position | default("Not specified") }}</p>
+<p><strong>Email:</strong> <a href="mailto:{{ email }}">{{ email }}</a></p>
+{% if mobilePhone %}
+<p><strong>Phone:</strong> {{ mobilePhone }}</p>
+{% endif %}
+{% if logo %}
+<p><img src="{{ logo }}" alt="Company Logo" width="150"></p>
+{% endif %}

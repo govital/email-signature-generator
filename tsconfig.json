@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "types": ["node", "jest"],
+    "moduleResolution": "node",
+    "baseUrl": "./conf",
+    "paths": {
+      "@services/*": ["service/*"]
+    },
+    "outDir": "./dist",
+    "module": "CommonJS",
+    "target": "ES6",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*.ts"]
+}
